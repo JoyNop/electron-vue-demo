@@ -2,27 +2,25 @@
  * @Author: HanRui(JoyNop)
  * @Date: 2021-01-04 14:41:01
  * @LastEditors: HanRui(JoyNop)
- * @LastEditTime: 2021-01-04 14:54:16
+ * @LastEditTime: 2021-01-04 17:09:02
  * @Description: file content
  * @FilePath: /electron-vue-demo/src/views/Home.vue
 -->
-<template>
+ <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <div>By JoyNop</div>
-
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Button>sdfgsdf</Button>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import { defineComponent } from 'vue';
+import { Button } from 'ant-design-vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
-    HelloWorld
-  }
-})
+    Button,
+  },
+});
 </script>
