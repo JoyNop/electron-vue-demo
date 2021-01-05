@@ -1,9 +1,17 @@
+<!--
+ * @Author: HanRui(JoyNop)
+ * @Date: 2021-01-04 14:41:01
+ * @LastEditors: HanRui(JoyNop)
+ * @LastEditTime: 2021-01-05 14:47:06
+ * @Description: file content
+ * @FilePath: /electron-vue-demo/src/App.vue
+-->
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  </div> -->
+  <router-view />
 </template>
 
 <style lang="less">
@@ -23,7 +31,7 @@
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #4268b9;
     }
   }
 }

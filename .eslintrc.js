@@ -2,7 +2,7 @@
  * @Author: HanRui(JoyNop)
  * @Date: 2021-01-04 14:41:01
  * @LastEditors: HanRui(JoyNop)
- * @LastEditTime: 2021-01-04 17:14:25
+ * @LastEditTime: 2021-01-05 09:10:28
  * @Description: file content
  * @FilePath: /electron-vue-demo/.eslintrc.js
  */
@@ -11,7 +11,7 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/vue3-essential', '@vue/standard', '@vue/typescript/recommended'],
+  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/typescript/recommended'],
   parserOptions: {
     ecmaVersion: 2020
   },
@@ -26,6 +26,6 @@ module.exports = {
     'space-before-function-paren': 0,
     // 忽略大括号内的空格
     'object-curly-spacing': 0,
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'only-multiline']
   }
 };

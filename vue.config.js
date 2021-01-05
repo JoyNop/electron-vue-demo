@@ -2,7 +2,7 @@
  * @Author: HanRui(JoyNop)
  * @Date: 2021-01-04 17:33:37
  * @LastEditors: HanRui(JoyNop)
- * @LastEditTime: 2021-01-04 17:38:59
+ * @LastEditTime: 2021-01-05 14:48:48
  * @Description: file content
  * @FilePath: /electron-vue-demo/vue.config.js
  */
@@ -26,15 +26,15 @@ module.exports = {
     loaderOptions: {
       less: {
         
-          modifyVars: {
-            'primary-color': '#1DA57A',
-            'link-color': '#1DA57A',
-            'border-radius-base': '2px',
-          },
-          javascriptEnabled: true,
+        modifyVars: {
+          'primary-color': '#4268b9',
+          'link-color': '#4268b9',
+          'border-radius-base': '2px'
+        },
+        javascriptEnabled: true
          
-      },
-    },
+      }
+    }
   },
   chainWebpack: config => {
     config.resolve.alias
