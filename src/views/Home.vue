@@ -2,7 +2,7 @@
  * @Author: HanRui(JoyNop)
  * @Date: 2021-01-04 14:41:01
  * @LastEditors: HanRui(JoyNop)
- * @LastEditTime: 2021-01-05 14:46:39
+ * @LastEditTime: 2021-01-05 15:04:05
  * @Description: file content
  * @FilePath: /electron-vue-demo/src/views/Home.vue
 -->
@@ -11,7 +11,7 @@
     <!-- <div class="header">dddd</div> -->
     <div class="body">
       <Card title="应用中心" class="card">
-        <a-card-grid class="card-grid">
+        <a-card-grid class="card-grid" @click="goTodolist">
           <img
             src="https://cdn.duobangbox.com/v3/static/app/app_icon_wealth.png"
             alt=""
@@ -38,8 +38,6 @@
 
           <div>title</div>
         </a-card-grid>
-        
-   
       </Card>
 
       <!-- <Button>sdfgsdf</Button> -->
@@ -51,11 +49,21 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { Card } from 'ant-design-vue';
+import router from '@/router';
 
 export default defineComponent({
   name: 'Home',
   components: {
     Card,
+  },
+  setup() {
+    const goTodolist = () => {
+      router.push('/todo');
+    };
+
+    return {
+      goTodolist,
+    };
   },
 });
 </script>

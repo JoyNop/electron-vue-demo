@@ -2,7 +2,7 @@
  * @Author: HanRui(JoyNop)
  * @Date: 2021-01-04 14:41:01
  * @LastEditors: HanRui(JoyNop)
- * @LastEditTime: 2021-01-04 18:04:05
+ * @LastEditTime: 2021-01-05 14:56:19
  * @Description: file content
  * @FilePath: /electron-vue-demo/src/router/index.ts
  */
@@ -22,6 +22,11 @@ const routes: Array<RouteRecordRaw> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/todo',
+    name: 'Todo',
+    component: () => import(/* webpackChunkName: "todo" */ '../views/Todo.vue')
   }
 ];
 
